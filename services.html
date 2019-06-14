@@ -11,9 +11,15 @@ body, html {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.topnav {
+  background-color: #333;
+  text-align: center;
+}
 ul.topnav {
   list-style-type: none;
-  margin: 0;
+  max-width: 1000px;
+  margin: 0 auto;
   padding: 0;
   overflow: hidden;
   background-color: #333;
@@ -45,7 +51,7 @@ li a:hover {
 }
 
 .hero-image{
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/srvimg/header.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('http://www.kong.cat/srvimg/header.jpg');
   height: 40%;
   background-position: center;
   background-repeat: no-repeat;
@@ -94,7 +100,7 @@ button {
 }
 
 .contact-image{
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/srvimg/footer.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('http://www.kong.cat/srvimg/footer.jpg');
   height: 25%;
   background-position: center;
   background-repeat: no-repeat;
@@ -125,7 +131,6 @@ p {
 }
 
 .row {
-  margin: 0 auto;
   display: flex;
   justify-content: center;
   flex-direction: row;
@@ -150,7 +155,10 @@ p {
   }
   
   .row {
+  display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
   }
 }
 
@@ -159,12 +167,12 @@ p {
 
 <body>
 
-<div>
+<div class="topnav">
 <ul class="topnav">
   <li><a href="#contact">Contact</a></li>
   <li><a href="#services">Services</a></li>
   <li><a href="#top">Free Estimate</a></li>
-  <li style="float:left"><a class="logo" href="http://www.kong.cat/services.html">AK</a></li>
+  <li class="logo" style="float:left;"><a href="http://www.kong.cat/">AK</a></li>
 </ul>
 </div>
 
@@ -181,7 +189,7 @@ p {
 
 <p>I come from a family of contractors, and spent my childhood around construction sites. As a jack-of-all-trades serving the Mid Valley and surrounding areas, I can help you with any manner of home problems, no problem and no job too small.</p>
 
-<p>If you would like an artful approach to making your home more beautiful or just making it work properly, <a href="#contact">contact me</a> and tell me about your project.</p>
+<p>If you would like an artful approach to making your home more beautiful or just making it work properly, email me[link] and tell me about your project.</p>
 </div>
 
 <div class="cta">
@@ -204,7 +212,7 @@ p {
 
 <div class="column">
 <div class="card">
-<img src="/srvimg/cabcard.jpg" style="width:100%; border-radius: 5px 5px 0 0;">
+<img src="http://www.kong.cat/srvimg/cabcard.jpg" style="width:100%; border-radius: 5px 5px 0 0;">
 <div class="container">
 <ul>
 <li>Carpentry</li>
@@ -218,7 +226,7 @@ p {
 
 <div class="column">
 <div class="card">
-<img src="/srvimg/doorcard.jpg" style="width:100%; border-radius: 5px 5px 0 0;">
+<img src="http://www.kong.cat/srvimg/doorcard.jpg" style="width:100%; border-radius: 5px 5px 0 0;">
 <div class="container">
 <ul>
 <li>Fencing repair</li>
@@ -232,7 +240,7 @@ p {
 
 <div class="column">
 <div class="card">
-<img src="/srvimg/finishedcard.jpg" style="width:100%; border-radius: 5px 5px 0 0;">
+<img src="http://www.kong.cat/srvimg/finishedcard.jpg" style="width:100%; border-radius: 5px 5px 0 0;">
 <div class="container">
 <ul>
 <li>Painting</li>
